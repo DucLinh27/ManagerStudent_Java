@@ -1,13 +1,13 @@
 package com.example.managerstudent;
 
-public class Student {
+public class EmployeeStore {
     protected int Id;
     protected String name;
     protected int age;
     protected int month;
 
 
-    public Student(int Id, String name, int age, int month) throws NumberFormatException
+    public EmployeeStore(int Id, String name, int age, int month) throws NumberFormatException
     {
         this.Id = Id;
         this.name = name;
@@ -18,7 +18,7 @@ public class Student {
             throw new NumberFormatException();
         }
     }
-    public Student()
+    public EmployeeStore()
     {
     }
 

@@ -1,14 +1,14 @@
 package com.example.managerstudent;
 
-public class Manager extends Student{
+public class ManagerStore extends EmployeeStore {
     protected Float managerSalary;
 
-    public Manager(int Id, String name, int age, int month, Float managerSalary) {
+    public ManagerStore(int Id, String name, int age, int month, Float managerSalary) {
         super(Id, name, age, month);
         this.managerSalary = managerSalary;
     }
 
-    public Manager() {
+    public ManagerStore() {
     }
 
     public Float getManagerSalary() {
@@ -24,7 +24,7 @@ public class Manager extends Student{
         return Id  + ", " + name + ", " + age + ", " + month + ", " + managerSalary;
     }
 
-    public int setToMonth (Manager manager)
+    public int setToMonth (ManagerStore manager)
     {
         int month = 1;
         if(month < 1 || month > 12)
@@ -35,7 +35,7 @@ public class Manager extends Student{
         return month;
     }
 
-    public float setToSalary (Manager manager)
+    public float setToSalary (ManagerStore manager)
     {
         float salary = 1000;
         if(salary < 1000)
